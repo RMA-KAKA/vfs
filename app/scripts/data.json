@@ -1,0 +1,14 @@
+files: [
+    {
+        name: "root",
+        block_id: 2
+    }
+]
+FAT:[
+    {id: 0, next: null},
+    {id: 1, next: 0},
+    {id: 2, next: 4},
+    {id: 3, next: null},
+    {id: 4, next: 5},
+    {id: 5, next: 1}
+]
