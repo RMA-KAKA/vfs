@@ -45,6 +45,10 @@ function create(type, name) {
     var block;
     var i;
     var exist = false;
+    if (name == '') {
+        alert('文件名不能为空');
+        return false;
+    }
     files.forEach(function (file) {
         if (file.name == curDir) {
             var node = nodes[file.node_id];
@@ -63,6 +67,9 @@ function create(type, name) {
         block = Blocks[i];
         if (block.used == false) {
             block.used = true;
+            if (type == 'dir') {
+                block.content = [];
+            }
             break;
         }
     }
@@ -91,10 +98,16 @@ function create(type, name) {
 
 $('#add-file').click(function () {
     create('file', $('#name').val());
+    $('#name').val('');
     return false;
 });
 $('#add-dir').click(function () {
     create('dir', $('#name').val());
+    $('#name').val('');
+    return false;
+});
+$('#back-to-root').click(function () {
+    ls('/');
     return false;
 });
 
