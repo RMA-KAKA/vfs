@@ -29,6 +29,7 @@
         <div class="container">
             <div class="header">
                 <h3 class="text-muted"><a href="/">virtual file system</a></h3>
+                <h5 class="pull-right"> by <a href="http://github.com/linkkingjay">Link</a></h5>
             </div>
 
             <div id="main">
@@ -45,10 +46,25 @@
                     <button class="btn btn-primary" id="add-file">添加文件</button>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-success" id="add-dir">添加目录</button>
+                    <button class="btn btn-info" id="add-dir">添加目录</button>
                 </div>
                 <div class="form-group pull-right">
                     <button class="btn btn-warning" id="back-to-root">回到根目录</button>
+                </div>
+            </form>
+
+            <br />
+
+            <form action="" class="form" style="display:none" id="editor">
+                <div class="form-group">
+                    <textarea id="editing-content" name="" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="form-group pull-left">
+                    <label for="" id="editing-file-name"></label>
+                </div>
+                <div class="form-group pull-right">
+                    <button class="btn btn-danger" id="remove">删除</button>
+                    <button class="btn btn-success" id="save">保存</button>
                 </div>
             </form>
 

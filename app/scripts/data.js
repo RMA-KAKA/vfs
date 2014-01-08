@@ -1,4 +1,4 @@
-var files = [
+var Files = [
     {
         "name": "/",
         "node_id": 0
@@ -24,7 +24,7 @@ var files = [
         "node_id": 5
     }
 ];
-var nodes = [
+var Nodes = [
     {"block": 0, "type": "dir"},
     {"block": 1, "type": "dir"},
     {"block": 2, "type": "dir"},
