@@ -1,6 +1,8 @@
-'use strict';
 
 (function () {
+    'use strict';
+    var curDir = '';
+
     var main = $('#main');
     function display(child) {
         files.forEach(function (file) {
@@ -31,8 +33,14 @@
                 });
             }
         });
+        $('.glyphicon-folder-close').parent().bind('dblclick', function () {
+            var name = this.children[1].innerHTML;
+            ls(name);
+        });
+        curDir = dir;
+        $('#curDir').html(curDir);
     }
 
-    ls('root');
+    ls('/');
 })();
 

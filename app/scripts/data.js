@@ -1,6 +1,6 @@
 var files = [
     {
-        "name": "root",
+        "name": "/",
         "node_id": 0
     },
     {

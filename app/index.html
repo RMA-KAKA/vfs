@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>file system</title>
+        <title>virtual file system</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -28,11 +28,14 @@
 
         <div class="container">
             <div class="header">
-                <h3 class="text-muted">virtual file system</h3>
+                <h3 class="text-muted"><a href="/">virtual file system</a></h3>
             </div>
 
-            <div id="main"></div>
-
+            <div id="main">
+                <ol class="breadcrumb">
+                    当前目录：<li id="curDir"></li>
+                </ol>
+            </div>
 
             <div class="footer">
                 <p> from <a href="mailto:linkkingjay@gmail.com">Link</a></p>
