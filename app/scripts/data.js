@@ -25,18 +25,32 @@ var files = [
     }
 ];
 var nodes = [
-    {"id": 0, "block": 0, "type": "dir"},
-    {"id": 1, "block": 1, "type": "dir"},
-    {"id": 2, "block": 2, "type": "dir"},
-    {"id": 3, "block": 3, "type": "dir"},
-    {"id": 4, "block": 4, "type": "file"},
-    {"id": 5, "block": 5, "type": "file"}
+    {"block": 0, "type": "dir"},
+    {"block": 1, "type": "dir"},
+    {"block": 2, "type": "dir"},
+    {"block": 3, "type": "dir"},
+    {"block": 4, "type": "file"},
+    {"block": 5, "type": "file"}
 ];
 var Blocks = [
-    {"children": ["bin", "home", "myfile1", "myfile2"]},
-    {"children": []},
-    {"children": ["Link"]},
-    {"children": ["myfile2"]},
-    {"text": "this is myfile 1"},
-    {"text": "this is myfile 2"}
+    {"content": ["bin", "home", "myfile1", "myfile2"], "used": true},
+    {"content": [], "used": true},
+    {"content": ["Link"], "used": true},
+    {"content": ["myfile2"], "used": true},
+    {"content": "this is myfile 1", "used": true},
+    {"content": "this is myfile 2", "used": true},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false},
+    {"content": "", "used": false}
 ];
